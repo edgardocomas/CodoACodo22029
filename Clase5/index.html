@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Clase 5</title>
+
+</head>
+<body>
+    <h1>CREAR CUENTA</h1>
+    <fieldset>
+       <legend>Informaci&oacute;n personal</legend>
+       <form>
+        <br>
+        <label>Nombre</label>
+        <input type="text" name="nombre">
+        <label>Apellido</label>
+        <input type="text" name="apellido">
+        <br>
+        <label>Direccion de email</label>
+        <input type="text" name="email" placeholder="mail@mail.com">
+        <br>
+        <label>Numero de documento</label>
+        <input type="text" name="documento" placeholder="xxxxxxxxx">
+        <br>
+        <label>Edad</label>
+        <input type="number" min="0" max="200">
+        <label>Tiene hijos</label>
+        <input type="checkbox" name="th" value="SI">
+        <br>
+        <label>Casado</label>
+        <span>SI</span>
+        <input type="radio" name="CASADO" value="SI">
+        <span>NO</span>
+        <input type="radio" name="CASADO" value="NO" checked>
+        <input type="submit" value="ENVIAR">
+        <br>
+        <label>Cantidad</label>
+        <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+       </form> 
+   </fieldset>
+   <filedset>
+       <legend>Form con tabla</legend> 
+       <!-- <form action="http://www.facebook.com"> <!--  Se envia la informacion a facebook--> >
+           <form action="../clase4/index.html"> 
+           <table>
+               <tr>
+                   <td>
+                      <label>Nombre</label>
+                      <input type="text" name="nombre" maxlen="100">
+                   </td>
+                   <td>
+                      <label>Apellido</label>
+                      <input type="text" name="apellido"> 
+                   </td>
+               </tr>
+               <tr>
+                   <td colsspan="2">
+                      <label>
+                         <label>Direccion de email</label>
+                         <input type="text" name="email" placeholder="mail@mail.com">
+                      </label>    
+                   </td>
+               </tr>
+               <tr>
+                   <td>
+                       <label>Nro de docuemnto</label> <br>
+                       <input type="number" name="dni" min-="0" max="99999999">
+                   </td>
+               </tr>
+               <tr>
+                   <td>
+                       <input type="submit" value="guardar1">
+                   </td>
+               </tr>
+           </table>
+       </form>
+   </filedset>
+  
+</body>
+</html>
