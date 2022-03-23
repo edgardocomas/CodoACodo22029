@@ -2,36 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Clase 6</title>
-
+    <title> Ejercicio de la Clase 6</title>
 </head>
 <body>
     <main>
         <section>
         <h1>Clase6</h1>
+        <!-- Distintas entradas sobre un Formulario -->
         
         <fieldset>
             <legend>
                   Alta de usuario
             </legend>
-           <form action="AlguienDeJava.html" method="post">
-              <input type="file" name="dni-frente"> 
+
+           <form action="AlguienDeJava.html" method="POST">
+              <input type="file" name="dni-frente" requiered> 
  
-              <input type="submit" value="enviar">
+              <input type="hidden" value="valor oculto" name="campo hidden"> 
+              <input type="url" name="url" requiered placeholder="http://algundominio.com.ar">
+              <input type="text" name="nombre" requiered placeholder="entrar algo">
+              <input type="text" requiered pattern="[0-9]" title="error devalidacion">
+              <br>
+              <textarea name="info-extra" cols="50" rows="5" required> </textarea>
 
-           </form>
-
-           <form action="AlguienDeJava.html">
-            <input type="hidden" valeu="valor oculto" name="campo hidden"> 
-            <input type="url" name="url" requiered placeholder="http://algundominio.com.ar">
-            <input type="text" name="nombre" requiered placeholder="entrar algo">
-            <input type="text" requiered pattern="[0-9]" title="error devalidacion">
-            <br>
-            <textarea name="info-extra" cols="50" rows="5">
-
-            </textarea>
-            <hr>
-            <select multiple>
+              <hr>
+             <select name="Multiple" multiple required>
                 <optgroup label="animales">
                     <option>leon</option>
                     <option>tigre</option>
@@ -41,23 +36,30 @@
                     <option>verde</option>
                     <option>azul</option>
                 </optgroup>
-            </select>
-           <hr>
-           <input list="browser">
-            <datalist  id="browser" name="databrowser">
+             </select>
+             <br>
+
+             <input list="browser" name="databrowser">
+            
+             <datalist  id="browser" name="databrowser">
                <option>Edge</option>
                <option>FireFox</option>
                <option>Opera</option>
-           </datalist>
-           <br>
-            <input type="search" name="buscar" id="buscar"/>
+             </datalist>
+             <br>
 
-            <input type="submit" value="enviar"/>
+             <label for="buscar"> Tipo search </label>
 
-         </form>
-   </fieldset>
+             <input type="search" name="buscar" id="buscar"/>
+             <br>
+             <input type="submit" value="enviar"/>
+
+            </form>
+        
+        </fieldset>
         </section>
 
     </main>
+
 </body>
 </html>
