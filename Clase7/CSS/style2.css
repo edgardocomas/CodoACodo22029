@@ -1,0 +1,21 @@
+/*
+*{
+    background-color: blue;
+}
+*/
+
+body {
+    background-color: aqua;
+}
+
+.container {
+    background-color: rgb(142, 216, 23);
+}
+
+.classsection{
+    background-color: rgb(243, 247, 14);
+}
+
+.header{
+    background-color: rgb(203, 243, 26);
+}

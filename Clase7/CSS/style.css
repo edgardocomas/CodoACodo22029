@@ -1,0 +1,33 @@
+/*
+*{
+    background-color: blue;
+}
+*/
+
+body {
+    background-color: aqua;
+}
+
+/* aplicar un estilo por id */
+
+#idsection{
+    background-color: blueviolet;
+}
+
+#idnav{
+    background-color: red;
+}
+
+/* estilo por clases*/
+.links{
+    color: yellow;
+}
+
+/* selector de etiquetas*/ 
+a{
+    text-decoration: none;
+}
+
+#linkActive{
+     color: burlywood;
+}
