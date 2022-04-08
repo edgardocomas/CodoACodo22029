@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        /* selectores por atributos*/ 
+        [href] {
+            background-color: blueviolet;
+            text-decoration: none;
+        }
+        /* elemento con contenido exacto*/ 
+        [href="nosotros.html"] {
+            background-color: yellow;
+        }
+        /* que comiencen con la letra i */
+        [href^="i"] {
+            background-color: aqua;
+        }
+        /* que contenga algo*/
+        [href*="s"] {
+            background-color: violet;
+        }
+        /* que terminen en */
+        [href$="l"] {
+            color: aliceblue;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        img[alt="s1"] {
+            border: 8px solid red;
+        }
+        img[alt="s2"] {
+            border: 8px solid blue;
+        }
+        .imagenes img[alt="s1"] {
+            border: 18px solid black;
+        }
+        .imagenes-2 img[alt="s1"] {
+            border: 18px dotted black;
+        }
+        .imagenes-2 img[alt="s1"]:hover {
+            border-radius: 50%;
+        }
+        .imagenes img[alt="s2"]:hover {
+            border-radius: 50%;
+            border: 30px dotted orange;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="imagenes.html">Imagenes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="imagenes">
+            <img src="..\Clase9\lossimpson.webp" alt="s1">;
+            <img src="..\Clase8\Favicon.bmp" alt="s2">;
+        </div>
+
+        <div class="imagenes-2">
+            <img src="..\Clase9\lossimpson.webp" alt="s1">;
+            <img src="..\Clase8\Favicon.bmp" alt="s2">;
+        </div>
+
+    </section>
+
+</body>
+
+</html>

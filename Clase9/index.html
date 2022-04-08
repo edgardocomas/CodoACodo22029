@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* elimino los margenes*/
+            margin: 0px;
+        }
+        .divBox {
+            margin-top: 15px;
+            margin-left: 25px;
+            border: 2px solid red;
+            /*padding-top: 25px; */
+            padding: 25px 10px;
+            /*width: 500px;*/
+            width: 45%;
+            /* para que el div mida 500px habria que restar 4 +50 +20 => tamanio total 476*/
+            box-sizing: border-box;
+            display: inline-block;
+            text-align: center;
+        }
+        /* especificidad, orden de importancia */
+        /* !important > inline > clases */
+        h3{
+            /*background-color: red;*/
+            color: aqua;
+        }
+        #sec1 {
+            color: blue;
+        }
+        #sec2 {
+            text-align: center;
+            margin: 0 auto;
+            width: 80%;
+        }
+        /* MEDIDAS 
+           > absolutas: 1px = 0.26mm
+                        mm, cm, pt (puntos), in, pica
+           > relativas: em: referido al elemento donde se encuentra
+                            div 10px => 2em=20px
+                        rem: se refiere al root element <html> : 16px  
+             flexibles: vw = viewport width
+                        vh = viewport height  
+        */
+        .medidas {
+            font-size: 10px;
+        }
+        .medidas h3 {
+            font-size: 3em; /* 30px*/
+        }
+        .medidas p {
+            font-size: 1.5em; /* 30px*/
+        }
+        .foto {
+            width: 15cm;
+            height: 20cm;
+            background-color: aqua;
+        }
+        /*posicionamiento*/
+        .cuadrado {
+            width: 200px;
+            height: 200px;
+            background: red;
+            /* position: fixed;
+            top: 100px;
+            left: 50px; */
+            position: relative;
+            top: 150px;
+            left: 200px;
+        }
+        .circulo {
+            background: blue;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 35%;
+            left: 35%;
+            border-radius: 50%;
+        }
+        .fijo {
+            background: blue;
+            top: 10px;
+            left: 20px;
+            width: 300px;
+            height: 300px;
+             position: fixed; 
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="fijo">
+               <div class="cuadrado">
+                    <ul>
+                       <li>
+                           <a>Opcion1</a>
+                       </li>
+                   </ul>
+                   <!-- Esto se refiere al cuadrado -->
+                
+                   <div class="circulo"> </div>
+        
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Esto lo refiere al html
+        <div class="circulo">
+        </div>
+        -->
+
+        <section>
+            <div class="divBox">
+                <h1>texto</h1>
+            </div>
+            <div class="divBox">
+                <h2>sub titulo</h2>
+            </div>
+        </section>
+
+        <!-- especificidad -->
+        <section id="sec2">
+            <h3 id="sec1" style="color: blueviolet;"> sub titulo 3 </h3> 
+        </section>
+
+        <section class="medidas">
+            <h3>texto en h3</h3>
+            <p>texto en section</p>
+        </section>
+        <section class="foto">
+            <img src="lossimpson.webp" class="foto">
+        </section>
+
+    </main> 
+</body>
+</html>
