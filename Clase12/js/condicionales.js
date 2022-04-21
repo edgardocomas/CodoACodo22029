@@ -24,6 +24,6 @@ switch(edad) {
             alert('soy bebe de 2');
             break;
     default:
-            alert('soy bebe de 1');               
+            alert('ninio');               
 }
   
