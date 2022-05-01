@@ -1,0 +1,98 @@
+
+#city{
+    color: white;
+    font-size: 28px;
+    font-style: italic;
+}
+
+
+
+.nav-link{
+    color: rgb(12, 242, 54);
+    font-size: 18px;
+}
+
+.card-img{
+     filter:brightness(50%)
+    /*filter: grayscale(30%);
+      filter: blur(5px);*/
+}
+
+.card-title{
+    color: white;
+    font-size: 28px;
+    text-align: right;
+}
+
+.card-text{
+    color: white;
+    font-size: 14px;
+    text-align: right;
+}
+
+.card-title-sub{
+    color:black;
+    font-size: 28px;
+    text-align: left;
+}
+
+.card-text-sub{
+    color: black;
+    font-size: 14px;
+    text-align: left;
+}
+
+.card-t{
+     background-color: lightslategrey;
+}
+
+.card-title-a{
+    color:white;
+}
+
+.card-text-a{
+    color:white;
+}
+
+.btn-s{
+    color: black;
+    font-size: 20px;
+    position: relative;
+    top: 300px;
+    left: 1090px;
+}
+
+.btn-e{
+
+   color: black;
+   border-color: rgb(204, 221, 11);
+
+}
+
+#sec_2_1{
+    color: black;
+    font-size: 12px;
+    text-align: center;
+}
+
+#sec_2_2{
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+#data{
+    text-align: center;
+    
+}
+
+.row{
+    justify-content: center;
+}
+
+footer{
+    background-color: blue;
+    color:white;
+    height: 70px;
+}
+
