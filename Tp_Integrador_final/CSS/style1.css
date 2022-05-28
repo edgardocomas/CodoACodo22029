@@ -1,0 +1,70 @@
+/** BEGIN OF NAVBAR ********************************************************************/
+#city {
+    color: white;
+    font-size: 28px;
+    font-style: italic;
+}
+
+.nav-link {
+    color: lightgray;
+    font-size: 18px;
+    text-align: right;
+}
+
+.navbar .navbar-nav a:last-child{
+    color: #1fff17;
+}
+/** END OF NAVBAR ********************************************************************/
+
+
+/** BEGIN OF COSTOS ********************************************************************/
+.costos .title {
+    text-align: center;
+} 
+.costos .container-costos {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card-text-sub {
+    align-items: center;
+    justify-content: center;
+}
+
+/** END OF COSTOS ********************************************************************/
+
+
+
+
+
+/** BEGIN OF FOOTER *****************************************************************************/
+footer{
+    background-color: rgb(10, 10, 134);
+    color:white;
+    height:120px;
+}
+
+.footer .container-footer {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .container-footer a {
+    text-decoration: none;
+    color: white;
+    padding: 3rem 0;
+    width: 100px;
+    text-align: center;
+}
+
+.footer .container-footer a:hover {
+    color: yellow;
+}
+/** END OF FOOTER   *****************************************************************************/
+
