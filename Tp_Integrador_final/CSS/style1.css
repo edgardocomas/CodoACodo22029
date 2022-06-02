@@ -16,29 +16,66 @@
 }
 /** END OF NAVBAR ********************************************************************/
 
-
+/** BEGIN OF purchase request *******************************************************/
+div#solicitud-compra{
+    margin:auto;
+    width: 960px;
+}
 /** BEGIN OF COSTOS ********************************************************************/
-.costos .title {
-    text-align: center;
-} 
 .costos .container-costos {
     width: 70%;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
 }
-
-.card-text-sub {
+ 
+.costos .container-costos .card {
     align-items: center;
-    justify-content: center;
+    border-color: red;
 }
 
+
+.costos .card-title-vent {
+    text-align:center;
+}
 /** END OF COSTOS ********************************************************************/
 
+/**  BEGIN OF FORM CLIENT ********************************************************************/
+/*.idform {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;   
+    text-align:center;
+}*/
+/**  END OF FORM CLIENT ********************************************************************/
 
+/**  BEGIN OF PROCESS ********************************************************************/
+.total_a_pagar {
+    border-style:none;   
+    border-radius: 5px;
+    background-color: lightblue;
+    color: black;
+    padding:20px;
+}
+.btnLimpiar {
+    width:460px;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    background: lightsalmon;
+    color:black;
+}
+.btnProcesar {
+    width:460px;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    background: blue;
+    color:white;
+}
+/**  END OF PROCESS ********************************************************************/
 
-
+/** END OF purchase request *******************************************************/
 
 /** BEGIN OF FOOTER *****************************************************************************/
 footer{

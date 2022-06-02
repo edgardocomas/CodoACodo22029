@@ -13,13 +13,11 @@
     <!-- BEGIN OF NAVBAR  --------------------------------------------------------------------------->
     <nav class="navbar navbar-expand-lg navbar-lghtgray" style="background-color: dimgray;">
         <div class="container-lg">
-
-           <!--<img src="imagenes\codoacodo.png" alt="NO SE"width="200" height="100">-->
+        <!--<img src="imagenes\codoacodo.png" alt="NO SE"width="200" height="100">-->
            <p id="city"> Conf Bs As </p>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button> 
-           
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="navbar-nav ms-auto"> 
                 <a class="nav-link" aria-current="page" color="white" href="index.html">La conferencia</a>
@@ -31,61 +29,114 @@
           </div>
         </div>
     </nav>
-<!-- END OF NAVBAR ------------------------------------------------------------------------------->
+   <!-- END OF NAVBAR ------------------------------------------------------------------------------->
 
+  <!-- BEGIN OF purchase request ------------------------------------------------------------------------------->
+  <div id="solicitud-compra">
 
-      <!-- BEGIN OF COSTOS ------------------------------------------------------------------------------->
+      <!-- BEGIN OF costs ------------------------------------------------------------------------------->
       <section class="costos" id="costos">
         <br>  
-    
         <div class="container-costos">
-          <div class="card" style="width: 20%;">  
-               
+          <div class="card" border-color:blue;">  
               <h5 class="card-title-sub">Estudiante</h5>
               <p class="card-text-sub">Tienen un descuento del</p>
               <h5 class="card-text-sub">80%</h5>
               <p class="card-text-sub">*presentar documentación</p>
-
            </div>
-           
-           <div class="card" style="width: 20%;">
-               
+           <div class="card" border-color:greenyellow;">
               <h5 class="card-title-sub">Trainee</h5>
               <p class="card-text-sub">Tienen un descuento del</p>
               <h5 class="card-text-sub">50%</h5>
               <p class="card-text-sub">*presentar documentación</p>
            </div>  
-         
-           <div class="card" style="width: 20%;">
-               
+           <div class="card" border-color:orange;">
                <h5 class="card-title-sub">Junior</h5>
                <p class="card-text-sub">Tienen un descuento del</p>
                <h5 class="card-text-sub">15%</h5>
                <p class="card-text-sub">*presentar documentación</p>
            </div>
-           <br>
+        </div>
+        <br>
+        <h6 class="card-title-vent">VENTA</h5>
+        <h2 class="card-title-vent">VALOR DEL TICKET $200</h2>
+        <br>
+      </section>
+      <!-- END OF costs ------------------------------------------------------------------------------->
+
+      <!-- BEGIN OF FORM CLIENT ------------------------------------------------------------------------------->  
+      <div class="container fluid"> 
+        <form id="clientform" > 
+            <div class="row g-3">
+              <div class="col-md-6">
+                  <input id="inombre"type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+              </div>
+              <div class="col-md-6">
+                  <input id="iapellido" type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="inputEmail4" class="form-label"></label>
+              <input id="mail" type="email" class="form-control" placeholder="correo" id="inputEmail4">
+            </div>
+            <div class="row g-3"> 
+              <div class="col-md-6">
+                <br>                     
+                <label for="inputCantidad" class="form-label">Cantidad</label>
+                <input id="idInputCantidad" type="text" class="form-control" placeholder="cantidad">
+              </div>
+              <div class="col-md-6">
+                <br>
+                <label for="inputState" class="form-label">Categoría</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Estudiante</option>
+                  <option>Trainee</option>
+                  <option>Junior</option>
+                </select>
+              </div>
+            </div>       
+        </form>
       </div>
+      <!-- END OF FORM CLIENT ------------------------------------------------------------------------------->  
+      
+      <br>
 
-    </section>
-    <!-- END OF COSTOS ------------------------------------------------------------------------------->
+      <!-- BEGIN OF PROCESS ------------------------------------------------------------------------------------>
+      <div class="col-md-12">
+        <P id="valor_total" class="total_a_pagar">
+          Total a Pagar: $
+        </P>          
+      </div>
+            <div >
+                <br>
+                  <button id="btnLimpiar"  onclick="limpiarform()"  class="btnLimpiar" type="button">Borrar</button>                                  
+                  <button id="btnProcesar" onclick="procesar()"   class="btnProcesar" style="margin-left:10px" type="button">Resumen</button>
+            </div>
+      </div>
+      <!-- END OF PROCESS ------------------------------------------------------------------------------------>
 
+  </div>
+  <!-- END OF purchase request ------------------------------------------------------------------------------->
 
+  <br>
 
+  <!-- BEGIN OF FOOTER ------------------------------------------------------------------------------->  
+  <footer CLASS="footer">
+      <div class="container-footer">
+        <a class="footer-item" href="#">Preguntas frecuentes</a>
+        <a class="footer-item" href="#">Contáctanos</a>
+        <a class="footer-item" href="#">Prensa</a>
+        <a class="footer-item" href="#">Conferencias</a>
+        <a class="footer-item" href="#">Términos y condiciones</a>
+        <a class="footer-item" href="#">Privacidad</a>
+        <a class="footer-item" href="#">Esdudiantes</a>
+      </div>
+    </footer>
+  <!-- END OF FOOTER ------------------------------------------------------------------------------->  
 
+  <script type="text/javascript" src="JS\process.js"></script>
 
-
-<!-- BEGIN OF FOOTER ------------------------------------------------------------------------------->  
-<footer CLASS="footer">
-    <div class="container-footer">
-      <a class="footer-item" href="#">Preguntas frecuentes</a>
-      <a class="footer-item" href="#">Contáctanos</a>
-      <a class="footer-item" href="#">Prensa</a>
-      <a class="footer-item" href="#">Conferencias</a>
-      <a class="footer-item" href="#">Términos y condiciones</a>
-      <a class="footer-item" href="#">Privacidad</a>
-      <a class="footer-item" href="#">Esdudiantes</a>
-    </div>
-  </footer>
-<!-- END OF FOOTER ------------------------------------------------------------------------------->  
 </body>
+
+
 </html>
